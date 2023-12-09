@@ -15,7 +15,7 @@ public class MountainRange {
         if(height[0]>height[1]) peak++;
         if(height[mountain-1]>height[mountain-2]) peak++;
         for(int i=1;i<mountain-1;i++){
-            if(height[i]>height[i-1]&&height[i]>height[i+i]) peak++;
+            if(height[i]>height[i-1]&&height[i]>height[i+1]) peak++;
         }
         System.out.println("Peak : "+peak);
     }
